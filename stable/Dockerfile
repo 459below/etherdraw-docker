@@ -16,7 +16,7 @@ ENV HOME_DIR=/srv/etherdraw \
 RUN mkdir $HOME_DIR \
     && groupadd --gid 6000 etherdraw \
     && useradd -d $HOME_DIR -r -g etherdraw --uid 6000 etherdraw \
-    && git clone https://github.com/JohnMcLear/draw.git --depth=1 -b master $HOME_DIR/draw/ \
+    && git clone https://github.com/459below/draw.git --depth=1 -b master $HOME_DIR/draw/ \
     && curl https://raw.githubusercontent.com/creationix/nvm/v0.31.0/install.sh | bash \
     && . $HOME_DIR/nvm/nvm.sh \
     && nvm install $NODE_VERSION \
