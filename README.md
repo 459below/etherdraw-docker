@@ -1,6 +1,3 @@
-[![Build Status](https://travis-ci.org/anybox/etherdraw-docker.svg?branch=master)]
-(https://travis-ci.org/anybox/etherdraw-docker)
-
 Etherdraw docker image
 ======================
 
@@ -58,5 +55,5 @@ Then to run your container:
 docker run -d -p 127.0.0.1:9002:9002 \
        --name etherdraw --link pg_cluster:dbhost \
        -v ~/etherdraw-settings.json:/srv/etherdraw/draw/settings.json \
-       anybox/etherdraw:develop
+       459below/etherdraw:develop
 ```
